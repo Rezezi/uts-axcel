@@ -29,7 +29,7 @@ const Navbar: React.FC = () => {
   }, []);
 
   return (
-    <nav className={`fixed w-full z-50 top-0 left-0 transition-all duration-300 ${scrolled ? 'bg-black' : 'bg-transparent'}`}>
+    <nav className={`fixed w-full z-50 top-0 left-0 transition-all duration-300 ${scrolled ? 'bg-purple-300' : 'bg-transparent'}`}>
       <div className="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
         {/* Logo */}
         <div className={`text-${scrolled ? 'blue-500' : 'white'} text-3xl font-bold transition-all duration-300`} style={{ transform: 'translateY(2px)' }}>
