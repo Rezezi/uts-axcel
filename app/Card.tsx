@@ -67,10 +67,10 @@ const ReviewsSlider: React.FC = () => {
       review: "Proin sagittis, neque sit amet venenatis lacinia, quam dolor efficitur ipsum..."
     },
     {
-      name: "Jane Smith",
+      name: "dwi wahyu ramadhan",
       title: "Product Manager",
       company: "Google",
-      image: "/google.png",
+      image: "/wi.jpg",
       review: "Phasellus ultricies nulla a orci scelerisque, eget tincidunt magna volutpat..."
     },
     {
