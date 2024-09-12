@@ -59,10 +59,10 @@ const ReviewsSlider: React.FC = () => {
       review: "Mauris nec magna a diam vehicula tristique at non urna. Proin feugiat..."
     },
     {
-      name: "John Doe",
+      name: "Rezezi Axcel",
       title: "CTO",
       company: "Apple",
-      image: "/apple.png",
+      image: "/ax.jpg",
       review: "Proin sagittis, neque sit amet venenatis lacinia, quam dolor efficitur ipsum..."
     },
     {
