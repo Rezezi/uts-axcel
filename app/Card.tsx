@@ -6,7 +6,7 @@ import React, { useRef } from 'react';
 // Card Component
 const ReviewCard: React.FC<{ name: string, title: string, company: string, image: string, review: string }> = ({ name, title, company, image, review }) => {
   return (
-    <div className="bg-white shadow-lg rounded-xl p-6 m-4 w-80 flex-shrink-0 transition-transform transform hover:scale-105">
+    <div className="bg-white shadow-lg rounded-xl p-6 m-4 w-80 flex-shrink-0">
       <div className="flex items-center mb-4">
         <div className="flex space-x-1 text-yellow-500">
           {Array(5).fill(0).map((_, i) => (
@@ -18,7 +18,7 @@ const ReviewCard: React.FC<{ name: string, title: string, company: string, image
       </div>
       <p className="text-gray-600 mb-6">{review}</p>
       <div className="flex items-center">
-        <img src={image} alt={name} className="w-12 h-12 rounded-full mr-4 transition-transform transform hover:scale-110" />
+        <img src={image} alt={name} className="w-12 h-12 rounded-full mr-4" />
         <div>
           <p className="text-gray-900 font-bold">{name}</p>
           <p className="text-indigo-600">{title} at {company}</p>
@@ -53,7 +53,7 @@ const ReviewsSlider: React.FC = () => {
       review: "Aliquam pulvinar vestibulum blandit. Donec sed nisl libero..."
     },
     {
-      name: "Sami Athari",
+      name: "sami athari",
       title: "Head of Marketing",
       company: "Tesla",
       image: "/sam.jpg",
@@ -67,21 +67,21 @@ const ReviewsSlider: React.FC = () => {
       review: "Proin sagittis, neque sit amet venenatis lacinia, quam dolor efficitur ipsum..."
     },
     {
-      name: "Dwi Wahyu Ramadhan",
+      name: "dwi wahyu ramadhan",
       title: "Product Manager",
       company: "Google",
       image: "/wi.jpg",
       review: "Phasellus ultricies nulla a orci scelerisque, eget tincidunt magna volutpat..."
     },
     {
-      name: "Rifaldi Ardiyansyah",
+      name: "rifaldi ardiyansyah",
       title: "Lead Engineer",
       company: "Amazon",
       image: "/pal.png",
       review: "Curabitur fringilla enim non magna posuere, non venenatis purus blandit..."
     },
     {
-      name: "Ahmad Dhani",
+      name: "ahmad dhani",
       title: "Senior Designer",
       company: "Spotify",
       image: "/dan.png",
@@ -127,7 +127,7 @@ const ReviewsSlider: React.FC = () => {
         <div className="flex justify-center mt-6 space-x-4">
           <button
             onClick={scrollLeft}
-            className="bg-indigo-600 text-white p-3 rounded-full focus:outline-none hover:bg-indigo-700 transition-transform transform hover:scale-110"
+            className="bg-indigo-600 text-white p-3 rounded-full focus:outline-none hover:bg-indigo-700 transition"
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
@@ -135,7 +135,7 @@ const ReviewsSlider: React.FC = () => {
           </button>
           <button
             onClick={scrollRight}
-            className="bg-indigo-600 text-white p-3 rounded-full focus:outline-none hover:bg-indigo-700 transition-transform transform hover:scale-110"
+            className="bg-indigo-600 text-white p-3 rounded-full focus:outline-none hover:bg-indigo-700 transition"
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
