@@ -5,7 +5,7 @@ const Footer: React.FC = () => {
     <footer className="bg-gray-900 text-white py-12">
       <div className="container mx-auto px-4">
         {/* Footer Sections */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center md:text-left">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
 
           {/* Company Info */}
           <div>
@@ -41,8 +41,8 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
             <ul className="space-y-2 text-gray-400">
-              <li>Email: <a className="hover:text-gray-200" href="mailto:info@teamapp.com">info@teamapp.com</a></li>
-              <li>Phone: <a className="hover:text-gray-200" href="tel:1-800-200-300">1-800-200-300</a></li>
+              <li>Email: <a className="hover:text-gray-200" href="mailto:axcelrezezi@gmail.com">axcelrezezi@gmail.com</a></li>
+              <li>Phone: <a className="hover:text-gray-200" href="tel:087878254877">087878254877</a></li>
               <li>Address: 1010 Sunset Blvd, Palo Alto, California</li>
             </ul>
           </div>

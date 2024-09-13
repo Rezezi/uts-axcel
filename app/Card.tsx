@@ -74,17 +74,17 @@ const ReviewsSlider: React.FC = () => {
       review: "Phasellus ultricies nulla a orci scelerisque, eget tincidunt magna volutpat..."
     },
     {
-      name: "Mike Tyson",
+      name: "rifaldi ardiyansyah",
       title: "Lead Engineer",
       company: "Amazon",
-      image: "/amazon.png",
+      image: "/pal.png",
       review: "Curabitur fringilla enim non magna posuere, non venenatis purus blandit..."
     },
     {
-      name: "Katy Perry",
+      name: "ahmad dhani",
       title: "Senior Designer",
       company: "Spotify",
-      image: "/spotify.png",
+      image: "/dan.png",
       review: "Aenean id purus id libero dapibus tristique. In a lorem vel quam sodales..."
     },
   ];
@@ -107,12 +107,6 @@ const ReviewsSlider: React.FC = () => {
     <div className="px-8 py-12 bg-gray-50">
       <h2 className="text-center text-3xl font-bold mb-8 text-gray-800">What our users are saying</h2>
       <div className="relative">
-        <button
-          onClick={scrollLeft}
-          className="absolute left-0 z-10 bg-indigo-600 text-white p-2 rounded-full -ml-4 focus:outline-none"
-        >
-          &#9664;
-        </button>
         <div
           className="flex overflow-x-auto space-x-6 p-4 scrollbar-hide"
           ref={sliderRef}
@@ -128,12 +122,26 @@ const ReviewsSlider: React.FC = () => {
             />
           ))}
         </div>
-        <button
-          onClick={scrollRight}
-          className="absolute right-0 z-10 bg-indigo-600 text-white p-2 rounded-full -mr-4 focus:outline-none"
-        >
-          &#9654;
-        </button>
+
+        {/* Arrow Buttons at the bottom */}
+        <div className="flex justify-center mt-6 space-x-4">
+          <button
+            onClick={scrollLeft}
+            className="bg-indigo-600 text-white p-3 rounded-full focus:outline-none hover:bg-indigo-700 transition"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+          <button
+            onClick={scrollRight}
+            className="bg-indigo-600 text-white p-3 rounded-full focus:outline-none hover:bg-indigo-700 transition"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
   );
