@@ -8,8 +8,8 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
 
           {/* Company Info */}
-          <div>
-            <h2 className="text-3xl font-bold text-blue-500">team.</h2>
+          <div className="hover-card">
+            <h2 className="text-3xl font-bold text-blue-500 rotating-image">team.</h2>
             <p className="text-gray-400 mt-4">
               Collaboration platform for modern teams.
             </p>
@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Features */}
-          <div>
+          <div className="hover-card">
             <h3 className="text-lg font-semibold mb-4">Features</h3>
             <ul className="space-y-2">
               <li><a className="text-gray-400 hover:text-gray-200" href="#">Screen Sharing</a></li>
@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Company Links */}
-          <div>
+          <div className="hover-card">
             <h3 className="text-lg font-semibold mb-4">Company</h3>
             <ul className="space-y-2">
               <li><a className="text-gray-400 hover:text-gray-200" href="#">Product</a></li>
@@ -38,7 +38,7 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Contact Section */}
-          <div>
+          <div className="hover-card">
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
             <ul className="space-y-2 text-gray-400">
               <li>Email: <a className="hover:text-gray-200" href="mailto:axcelrezezi@gmail.com">axcelrezezi@gmail.com</a></li>
