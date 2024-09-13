@@ -6,7 +6,7 @@ import React, { useRef } from 'react';
 // Card Component
 const ReviewCard: React.FC<{ name: string, title: string, company: string, image: string, review: string }> = ({ name, title, company, image, review }) => {
   return (
-    <div className="bg-white shadow-lg rounded-xl p-6 m-4 w-80 flex-shrink-0">
+    <div className="bg-white dark:bg-gray-800 shadow-lg rounded-xl p-6 m-4 w-80 flex-shrink-0">
       <div className="flex items-center mb-4">
         <div className="flex space-x-1 text-yellow-500">
           {Array(5).fill(0).map((_, i) => (
@@ -16,12 +16,12 @@ const ReviewCard: React.FC<{ name: string, title: string, company: string, image
           ))}
         </div>
       </div>
-      <p className="text-gray-600 mb-6">{review}</p>
+      <p className="text-gray-600 dark:text-gray-300 mb-6">{review}</p>
       <div className="flex items-center">
         <img src={image} alt={name} className="w-12 h-12 rounded-full mr-4" />
         <div>
-          <p className="text-gray-900 font-bold">{name}</p>
-          <p className="text-indigo-600">{title} at {company}</p>
+          <p className="text-gray-900 dark:text-gray-100 font-bold">{name}</p>
+          <p className="text-indigo-600 dark:text-indigo-400">{title} at {company}</p>
         </div>
       </div>
     </div>
@@ -104,8 +104,8 @@ const ReviewsSlider: React.FC = () => {
   };
 
   return (
-    <div className="px-8 py-12 bg-gray-50">
-      <h2 className="text-center text-3xl font-bold mb-8 text-gray-800">What our users are saying</h2>
+    <div className="px-8 py-12 bg-gray-50 dark:bg-gray-900">
+      <h2 className="text-center text-3xl font-bold mb-8 text-gray-800 dark:text-gray-100">What our users are saying</h2>
       <div className="relative">
         <div
           className="flex overflow-x-auto space-x-6 p-4 scrollbar-hide"
@@ -127,7 +127,7 @@ const ReviewsSlider: React.FC = () => {
         <div className="flex justify-center mt-6 space-x-4">
           <button
             onClick={scrollLeft}
-            className="bg-indigo-600 text-white p-3 rounded-full focus:outline-none hover:bg-indigo-700 transition"
+            className="bg-indigo-600 dark:bg-indigo-500 text-white p-3 rounded-full focus:outline-none hover:bg-indigo-700 dark:hover:bg-indigo-400 transition"
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
@@ -135,7 +135,7 @@ const ReviewsSlider: React.FC = () => {
           </button>
           <button
             onClick={scrollRight}
-            className="bg-indigo-600 text-white p-3 rounded-full focus:outline-none hover:bg-indigo-700 transition"
+            className="bg-indigo-600 dark:bg-indigo-500 text-white p-3 rounded-full focus:outline-none hover:bg-indigo-700 dark:hover:bg-indigo-400 transition"
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
